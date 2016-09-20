@@ -15,3 +15,29 @@ input:focus,textarea:focus,select:focus,a:focus{
 	outline:2px solid purple;
 }
 /*reset everything once for all END*/
+
+/*gradient*/
+.gradient{
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.5, #FAFAFA),
+		color-stop(1, #E4E4E4)
+	);
+	background-image: -o-linear-gradient(bottom, #FAFAFA 50%, #E4E4E4 100%);
+	background-image: -moz-linear-gradient(bottom, #FAFAFA 50%, #E4E4E4 100%);
+	background-image: -webkit-linear-gradient(bottom, #FAFAFA 50%, #E4E4E4 100%);
+	background-image: -ms-linear-gradient(bottom, #FAFAFA 50%, #E4E4E4 100%);
+	background-image: linear-gradient(to bottom, #FAFAFA 50%, #E4E4E4 100%);
+	/* "Invalid", but works in 6-8 */
+	filter:progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=0),
+		progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=90),
+		progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=180),
+		progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FAFAFA, endColorstr=#E4E4E4);
+	/* Valid, works in 8-9 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=0)",
+		"progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=90)",
+		"progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=5, Direction=180)", 
+		"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FAFAFA, endColorstr=#E4E4E4)";
+}
